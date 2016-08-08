@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |------+------+------+------+------+------|------+------+------+------+------+------|
    * |      |      |      |Aud on|AudOff|AGnorm|AGswap|      |      |      |      |      |
    * |------+------+------+------+------+------|------+------+------+------+------+------|
-   * |      |Voice-|Voice+|Mus on|MusOff|      |      |      |      |      |      |      |
+   * |      |Voice-|Voice+|Mus on|MusOff|      |      | Play |      | Prev | Next |      |
    * `-----------------------------------------------------------------------------------'
    */
   [_FN] = {
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     {_______, KC_F11,  KC_F12,  KC_F13,  KC_F14,  KC_F15,  KC_F16,  KC_F17,  KC_F18,  KC_F19,  KC_F20,  _______},
     {_______, KC_VOLD, KC_VOLU, KC_MUTE, _______, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______},
     {_______, _______, _______, AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, _______, _______, _______, _______, _______},
-    {_______, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  _______, _______, _______, _______, _______, _______, _______}
+    {_______, MUV_DE,  MUV_IN,  MU_ON,   MU_OFF,  _______, _______, KC_MPLY, _______, KC_MPRV, KC_MNXT, _______}
   }
 
 };
