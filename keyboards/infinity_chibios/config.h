@@ -35,6 +35,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROWS 9
 #define MATRIX_COLS 7
 
+#define TAPPING_TERM    200
+
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
 
@@ -67,6 +69,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* disable print */
 //#define NO_PRINT
+//
 
 /* disable action features */
 //#define NO_ACTION_LAYER
