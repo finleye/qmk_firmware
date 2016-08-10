@@ -42,15 +42,15 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |-----------------------------------------------------------|
      * |        |   |   |   |   |   |  +|  -|End|PgD|Dow|      |   |
      * `-----------------------------------------------------------'
-     * |     |Gui|Alt  |         Space         |Alt  |Gui|   |     |
+     * |     |   |     |      Play/Pause       |     |   |   |     |
      * `-----------------------------------------------------------'
      */
     [_FN] = KEYMAP(
       DEBUG,   KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10, KC_F11, KC_F12, KC_INS, KC_DEL,   \
-      KC_CAPS, _______,_______,_______,_______,_______,_______,_______,KC_PSCR,XXXXXXX,KC_PAUS, KC_UP, _______, KC_BSPC,      \
+      KC_CAPS, _______,_______,_______,_______,_______,_______,_______,KC_PSCR,_______,_______, KC_UP, _______, KC_BSPC,      \
       _______, KC_VOLD,KC_VOLU,KC_MUTE,_______,_______,KC_PAST,KC_PSLS,KC_HOME,KC_PGUP,KC_LEFT,KC_RGHT,KC_PENT,            \
       _______, _______,_______,_______,_______,_______,KC_PPLS,KC_PMNS,KC_END, KC_PGDN,KC_DOWN,M(_ULCK),_______,            \
-      _______, _______,_______,          _______,               _______,_______,_______,_______),
+      _______, _______,_______,         KC_MPLY,               _______,_______,_______,_______),
 };
 
 const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
