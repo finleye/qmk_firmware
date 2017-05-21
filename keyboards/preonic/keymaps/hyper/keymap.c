@@ -80,13 +80,5 @@ void music_scale_user(void)
 
 const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
 {
-  switch(id) {
-    case _ULCK:
-      if (record->event.pressed) {
-        /* time.heals.nothing */
-        return MACRO( I(10), T(T), T(I), T(M), T(E), T(DOT), T(H), T(E), T(A), T(L), T(S), T(DOT), T(N), T(O), T(T), T(H), T(I), T(N), T(G), T(ENTER), END);
-      }
-      break;
-  }
   return MACRO_NONE;
 };
