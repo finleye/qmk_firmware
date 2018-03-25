@@ -129,7 +129,7 @@ void process_action(keyrecord_t *record, action_t action)
                                                                 action.key.mods<<4;
                 if (event.pressed) {
                     if (mods) {
-                        if (IS_MOD(action.key.code)) {
+                        if (IS_MOD(action.key.code) || !action.key.code) {
                             // e.g. LSFT(KC_LGUI): we don't want the LSFT to be weak as it would make it useless.
                             // this also makes LSFT(KC_LGUI) behave exactly the same as LGUI(KC_LSFT)
                             add_mods(mods);
@@ -142,7 +142,7 @@ void process_action(keyrecord_t *record, action_t action)
                 } else {
                     unregister_code(action.key.code);
                     if (mods) {
-                        if (IS_MOD(action.key.code)) {
+                        if (IS_MOD(action.key.code) || !action.key.code) {
                             del_mods(mods);
                         } else {
                             del_weak_mods(mods);

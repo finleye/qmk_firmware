@@ -155,4 +155,4 @@ endif
 EXTRALIBDIRS = $(RULESPATH)/ld
 
 dfu-util: $(BUILD_DIR)/$(TARGET).bin sizeafter
-	dfu-util -D $(BUILD_DIR)/$(TARGET).bin
+	dfu-util -D $(BUILD_DIR)/$(TARGET).bin -S mk20dx128vlf5
